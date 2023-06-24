@@ -1,0 +1,41 @@
+.menu-lateral:hover , .menu-lateral:has(.active){
+    background-color: rgba(111,202,255,.53333);
+}
+
+#boton_menu{
+    position: fixed;
+    left: 65px;
+    bottom: 40px;
+    z-index: 1022;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    display: block;
+    text-align: start;
+}
+
+footer a:hover{
+    color: white;
+    text-decoration: underline;
+    
+}
+
+.btn-hover:hover{
+    --bs-btn-hover-color: #212529 !important ;
+    --bs-btn-hover-bg: #ffff !important;
+}
+
+.titulo_empleo{
+    font-size: 1.3em;
+    white-space: nowrap;
+}
+
+#modalUbicación .modal-header{
+    background-image: url(https://peaku.co/img/backgrounds/blue-waves.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
