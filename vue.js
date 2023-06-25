@@ -174,8 +174,8 @@ let app = new Vue({
       }
     },
     buscar(){
-      this.empleos = this.empleos_todos.filter(e => e.titulo.toLowerCase().includes(this.palabra_buscar.toLowerCase()) );
-      console.log("entro");
+      var palabra = this.palabra_buscar.toLowerCase();
+      this.empleos = this.empleos_todos.filter(e => e.titulo.toLowerCase().includes(palabra) || e.ubicacion.toLowerCase().includes(palabra) || e.empresa.toLowerCase().includes(palabra));
     }
   }
 })
