@@ -147,7 +147,8 @@ let app = new Vue({
       ],
       empleos:[],
       ubicaciones :['Todas'],
-      ubicaciones_select :'Todas'
+      ubicaciones_select :'Todas',
+      palabra_buscar:''
     }
   },
   beforeMount() {
@@ -171,6 +172,10 @@ let app = new Vue({
       else{
         this.empleos = this.empleos_todos.filter(e => e.ubicacion == this.ubicaciones_select);
       }
+    },
+    buscar(){
+      this.empleos = this.empleos_todos.filter(e => e.titulo.toLowerCase().includes(this.palabra_buscar.toLowerCase()) );
+      console.log("entro");
     }
   }
 })
