@@ -1,4 +1,4 @@
-.menu-lateral:hover , .menu-lateral:has(.active){
+.menu-lateral:hover , .menu-lateral:has(.active) ,#modalUbicación .modal-header{
     background-color: rgba(111,202,255,.53333);
 }
 
@@ -34,8 +34,5 @@ footer a:hover{
 }
 
 #modalUbicación .modal-header{
-    background-image: url(https://peaku.co/img/backgrounds/blue-waves.svg);
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: cover;
+    background-color: #3a8ced;
 }
